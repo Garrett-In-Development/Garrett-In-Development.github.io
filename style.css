@@ -1,0 +1,195 @@
+/* --- General Settings --- */
+
+:root {
+  --accent: burlywood;
+  --dark-background: #1d1d1d;
+  --dim-background: #3d3d3d;
+  --bright-content: #f1f1f1;
+  --dim-content: #4e4e4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  font-size: 14pt;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  color: #000000;
+  background-color: var(--dark-background);
+}
+
+.header, nav, main, footer {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.section-header {
+  margin-top: 2rem;
+  color: var(--accent);
+  font-family: "Source Code Pro", sans;
+  font-size: 2rem;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.right {
+  float: right;
+}
+
+#highlights {
+  --accent: #a82424;
+}
+
+#posts {
+  --accent: #d98674;
+}
+
+/* --- Navigation --- */
+
+nav {
+  text-align: center;
+  background-color: var(--accent);
+  box-shadow: 5px 5px 10px black;
+}
+
+.nav-link {
+  font-family: "Source Code Pro", sans;
+  display: inline-block;
+  width: 25%;
+  margin: 0 auto;
+  color: #1f1f1f;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+/* --- Main Content --- */
+
+main {
+  margin: 0 auto;
+  padding: 0 25px;
+  height: 100%;
+  max-width: 900px;
+  min-width: 200px;
+}
+
+#logo {
+  width: 100%;
+  height: 400px;
+  background-color: brown;
+}
+
+  /* Card Layout */
+
+.card {
+  box-shadow: 5px 5px 10px black;
+  background-color: var(--dim-background);
+  padding: 1em;
+  margin: 10px 0 50px 0;
+  max-height: 300px;
+  min-height: 150px
+}
+
+.card-content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: minmax(25px, auto);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.card-img {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.card-title {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  color: #1a1a1a;
+  padding: 3px;
+}
+
+.card-text {
+  grid-column: 1;
+  grid-row: 2 / 3;
+  color: var(--bright-content);
+  background-color: var(--dim-content);
+  text-align: left;
+  width: 75%;
+  padding: 1em;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.card-content h3 {
+  background-color: var(--accent);
+  margin: auto;
+  padding: 4px;
+  position: absolute;
+  left: 1em;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.read-more a {
+  color: var(--dim-background);
+  background: var(--bright-content);
+  padding: 4px;
+  margin-left: 1em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+ /* Update Layout */
+
+#updates {
+  color: white;
+  padding: 50px;
+}
+
+.update {
+  margin: 0.5em;
+  padding: 5px 0px;
+}
+
+.update-date {
+  background-color: var(--accent);
+  margin: 5px;
+  display: inline;
+  color: #1a1a1a;
+  padding: 3px;
+}
+
+.update-content {
+  color: lightgrey;
+  margin: 5px 5px;
+  padding: 0px;
+}
+
+/* --- Footer --- */
+
+footer {
+  margin-bottom: 0;
+  text-align: left;
+  color: var(--bright-content);
+}
